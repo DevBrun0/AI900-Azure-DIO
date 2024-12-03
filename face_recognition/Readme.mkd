@@ -1,0 +1,66 @@
+#### In these steps, we’ll explore how to work simply with Azure's computer vision, enabling us to detect a person’s face or even recognize and extract text from an image.
+
+<br>
+
+#### To follow this guide, you need to have an Azure account. If you don’t already have one, follow this link to create your account:  
+[Click here](https://www.youtube.com/watch?v=ZYps6TmBkWk)
+
+<br>
+
+#### To access the resource we’ll be using today, go to your dashboard and click on "Create a resource."
+
+![Logo do Markdown](images/step1.png)  
+<br>
+
+#### From the list of available resources, click on "AI + Machine Learning."  
+![Logo do Markdown](images/step2.png)  
+
+<br>
+
+#### In Azure AI Services, click on "Create."  
+![Logo do Markdown](images/step3.png)  
+
+<br>
+
+#### Now that we’re creating our resource, fill in the required fields. The names don’t have to be exact. Once you’ve completed the fields, click "Review + Create" at the bottom.  
+![Logo do Markdown](images/step4.png)  
+
+<br>
+
+#### With the resource created, we can now access the portal where we’ll work with the tool. The resource we just created (Azure Workspace) serves as storage and processing space for AI-related tasks.  
+![Logo do Markdown](images/step5.png)  
+
+<br>
+
+#### In your browser, access the following link: [Click here](https://portal.vision.cognitive.azure.com)  
+#### On this page, you’ll find a panel where, under "View All Resources," you can see the workspace we just created. From there, click on "Face" to begin exploring facial recognition.  
+
+![Logo do Markdown](images/step6.png)  
+
+![Logo do Markdown](images/step7.png)  
+
+<br>
+
+#### Then, click on "Detect Faces in Image."  
+
+![Logo do Markdown](images/step8.png)  
+
+<br>
+
+#### Facial detection algorithms typically start by identifying the human eyes, as they are one of the easiest features to locate. From there, the algorithm searches for other key facial landmarks such as eyebrows, nose, nostrils, mouth, and even the irises. Once the algorithm detects a region that could be a face, it runs additional checks to confirm the identification.
+
+#### To achieve high precision, these algorithms are trained on massive datasets containing hundreds of thousands of images, including both real faces and non-face scenarios. This training enables the system to recognize patterns effectively, just like the model we’re testing now.
+
+#### To use this tool, make sure the checkbox is marked and select one of the models (custom or prebuilt) to perform the detection. In the JSON output, you’ll see numbers resembling "coordinates." These numbers represent each captured point used to recognize the face.
+
+![Logo do Markdown](images/step9.png)  
+
+<br>
+
+#### Now, to detect text in an image, return to the panel and select "Optical Character Recognition."  
+![Logo do Markdown](images/textstep1.png)  
+
+<br>
+
+#### For this example, we used a card to extract its information. The recognition happens through OCR (Optical Character Recognition). The process starts with image preprocessing, where the image is converted to grayscale, noise is removed, and a threshold is applied to highlight the text. Next, the algorithm identifies regions likely to contain text and segments them into lines, words, or characters. Each character is analyzed by comparing patterns against a database or using neural networks trained to identify letters and numbers. Finally, post-processing corrects errors based on context and organizes the extracted text into its original format. Tools like Tesseract OCR or APIs such as Google Cloud Vision are common examples of this technology.  
+![Logo do Markdown](images/textstep2.png)  
