@@ -1,0 +1,47 @@
+#### Starting with the resources, select the **AI + Machine Learning** option, and then click **Create** under the **Language Service** resource.
+
+#### In this step-by-step guide, we’ll explore how Azure technology can detect emotions in text.  
+![](./images/step1.png)  
+
+<br>
+
+#### Next, click **Create**. You don’t necessarily need to understand the adjacent options.  
+![](./images/step2.png)  
+
+<br>
+
+#### To create our resource, ensure all the fields below are correctly filled out. Finally, check the box and click **Review + Create**.  
+![](./images/step3.png)  
+
+<br>
+
+#### Once again, click **Create**.  
+![](./images/step4.png)  
+
+<br>
+
+#### After creating our workspace, access the production environment link where we’ll analyze text emotions.  
+
+[Click here](https://language.cognitive.azure.com/home)  
+![](./images/step5.png)  
+
+<br>
+
+#### After following the link, fill in the required fields. Here, you will select the environment we just created.  
+![](./images/step6.png)  
+
+<br>
+
+#### Once inside the dashboard, among all the options, click **Classify Text** and select **Analyze Sentiments and Opinions**.  
+![](./images/step7.png)  
+
+<br>
+
+#### In this section, you can view the input text and its results displayed below.  
+![](./images/step8.png)  
+
+<br>
+
+#### The tool we’re using provides sentiment labels (such as "negative," "neutral," and "positive") based on the highest confidence score detected by the service at both the phrase and document levels. It also returns confidence scores ranging from 0 to 1 for each sentiment (positive, neutral, and negative) within the document and its phrases.  
+
+![](./images/step9.png)  
